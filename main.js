@@ -75,7 +75,7 @@ function ReloadImages() {
 function loadJson() {
 	$.get("https://gist.githubusercontent.com/kuanb/dbe19ce4e8ef317ee3fc/raw/8dd002cc26f7076eed84f0104bbc70eb1117b9f9/traffic-cameras.json", function(data) {
 		var jsonObj = JSON.parse(data);
-		for (var i = 0; i < 356; i++) {
+		for (var i = 0; i < 70; i++) {
 			if (containing(skipCamera, i)) continue;
 			AddWindow('', jsonObj[i].camera, i);
 		}
